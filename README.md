@@ -1,0 +1,90 @@
+# 🫀 ECG-LLM-Analyst
+
+Agentic ECG report generator. Runs **classical signal processing** (Pan-Tompkins
+QRS detection + time-domain HRV) on an ECG, then pipes the extracted features into
+an **LLM** (Groq via LiteLLM) to produce a clinical narrative report.
+
+The deterministic signal-processing half and the generative half are cleanly
+separated by a single Pydantic contract (`FeatureSet`), so the science is testable
+and the LLM only ever sees interpreted numbers.
+
+```
+record → preprocess → Pan-Tompkins → HRV → FeatureSet → LangGraph agent → EcgReport
+```
+
+## Stack
+
+Python · NumPy/SciPy · LiteLLM (Groq default) · LangGraph · FastAPI · Gradio · Airflow
+
+## Quick start
+
+```bash
+pip install -e ".[dev]"        # install package + dev tools
+pytest                          # runs fully offline (synthetic data + mock LLM)
+python -m ecg_llm.pipeline      # run the pipeline, print a JSON report
+```
+
+No API key needed: with no matching API key set, the report layer uses a
+deterministic **mock** so everything runs offline. To use Groq (free key at
+[console.groq.com](https://console.groq.com)):
+
+```bash
+cp .env.example .env            # then set GROQ_API_KEY=...
+```
+
+Any LiteLLM model works — change `LLM_MODEL` (e.g. `xai/grok-4`, `openai/gpt-4o`,
+`ollama/llama3`) and set the matching key.
+
+## Interfaces
+
+**FastAPI**
+```bash
+uvicorn api.main:app --reload
+# GET  /health
+# POST /analyze   {"source": "synthetic", "duration_s": 30, "mean_hr_bpm": 72}
+```
+
+**Gradio demo** (HuggingFace Spaces entrypoint)
+```bash
+python app/gradio_app.py        # http://localhost:7860
+```
+
+**Airflow pipeline**
+```bash
+cd airflow
+echo "AIRFLOW_UID=50000" > .env  # add XAI_API_KEY here too if you have one
+docker compose up airflow-init
+docker compose up                # http://localhost:8080  (airflow/airflow)
+# trigger the "ecg_pipeline" DAG
+```
+
+## Real PhysioNet data
+
+The default sample is synthetic (zero external dependency). To analyze a real
+record, the `ingest.physionet` loader uses `wfdb`:
+
+```python
+from ecg_llm.pipeline import run_pipeline
+report = run_pipeline(source="100", pn_dir="mitdb")   # MIT-BIH record 100
+```
+
+## Layout
+
+```
+ecg_llm/        importable package (signal processing + LLM report)
+  ingest/       synthetic generator + PhysioNet WFDB loader
+  signal/       preprocess, Pan-Tompkins, HRV  (pure NumPy/SciPy)
+  features/     signal → FeatureSet
+  report/       LiteLLM client + LangGraph agent  (only LLM-touching code)
+  pipeline.py   ingest → features → report orchestration
+api/            FastAPI service
+app/            Gradio demo
+airflow/        docker-compose stack + DAG
+tests/          offline pytest suite
+docs/           design spec
+```
+
+## Notes
+
+This is a portfolio/demo project. The reports are **automated and non-diagnostic** —
+not for clinical use.

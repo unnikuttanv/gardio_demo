@@ -1,0 +1,106 @@
+# Airflow stack for the ECG-LLM pipeline (LocalExecutor + Postgres).
+#
+# Quick start (from the airflow/ directory):
+#   1. echo "AIRFLOW_UID=50000" > .env        # on Linux/macOS use: id -u
+#   2. docker compose up airflow-init
+#   3. docker compose up
+#   4. Open http://localhost:8080  (login: airflow / airflow)
+#   5. Trigger the "ecg_pipeline" DAG.
+#
+# The project package (../ecg_llm) is mounted and installed via
+# _PIP_ADDITIONAL_REQUIREMENTS so the DAG runs the same code as the API.
+
+x-airflow-common: &airflow-common
+  image: apache/airflow:2.9.3-python3.11
+  environment: &airflow-common-env
+    AIRFLOW__CORE__EXECUTOR: LocalExecutor
+    AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+    AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+    AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "true"
+    # Install the pipeline's runtime deps into the Airflow containers.
+    _PIP_ADDITIONAL_REQUIREMENTS: >-
+      numpy scipy wfdb pydantic pydantic-settings litellm langgraph
+    # Make the project package importable inside the containers.
+    PYTHONPATH: /opt/airflow/project
+    # Forward the Groq key (empty -> mock LLM). Set GROQ_API_KEY in airflow/.env.
+    GROQ_API_KEY: ${GROQ_API_KEY:-}
+    LLM_MODEL: ${LLM_MODEL:-groq/llama-3.3-70b-versatile}
+  volumes:
+    - ./dags:/opt/airflow/dags
+    - ./logs:/opt/airflow/logs
+    - ./plugins:/opt/airflow/plugins
+    - ../ecg_llm:/opt/airflow/project/ecg_llm
+    - ../data:/opt/airflow/data
+  user: "${AIRFLOW_UID:-50000}:0"
+  depends_on: &airflow-common-depends-on
+    postgres:
+      condition: service_healthy
+
+services:
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+    volumes:
+      - postgres-db-volume:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "airflow"]
+      interval: 10s
+      retries: 5
+      start_period: 5s
+    restart: always
+
+  airflow-webserver:
+    <<: *airflow-common
+    command: webserver
+    ports:
+      - "8080:8080"
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+    restart: always
+    depends_on:
+      <<: *airflow-common-depends-on
+      airflow-init:
+        condition: service_completed_successfully
+
+  airflow-scheduler:
+    <<: *airflow-common
+    command: scheduler
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:8974/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+    restart: always
+    depends_on:
+      <<: *airflow-common-depends-on
+      airflow-init:
+        condition: service_completed_successfully
+
+  airflow-init:
+    <<: *airflow-common
+    entrypoint: /bin/bash
+    command:
+      - -c
+      - |
+        airflow db migrate
+        airflow users create \
+          --username airflow --password airflow \
+          --firstname Air --lastname Flow \
+          --role Admin --email admin@example.com || true
+    environment:
+      <<: *airflow-common-env
+      _AIRFLOW_DB_MIGRATE: "true"
+      _AIRFLOW_WWW_USER_CREATE: "true"
+      _AIRFLOW_WWW_USER_USERNAME: airflow
+      _AIRFLOW_WWW_USER_PASSWORD: airflow
+
+volumes:
+  postgres-db-volume:

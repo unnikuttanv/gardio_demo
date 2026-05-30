@@ -1,0 +1,768 @@
+{
+  "generated_at": "2026-05-30",
+  "n_days": 7,
+  "users": [
+    {
+      "user_id": "P001",
+      "name": "Ava Reyes",
+      "profile": "healthy adult, stable",
+      "daily": [
+        {
+          "day_index": 0,
+          "date": "2026-05-24",
+          "features": {
+            "source": "synthetic",
+            "lead": "II",
+            "fs": 360,
+            "duration_s": 30.0,
+            "n_beats": 33,
+            "mean_hr_bpm": 67.8,
+            "min_hr_bpm": 60.3,
+            "max_hr_bpm": 76.1,
+            "sdnn_ms": 53.9,
+            "rmssd_ms": 67.7,
+            "pnn50_pct": 58.1,
+            "flags": [
+              "normal_rate"
+            ]
+          }
+        },
+        {
+          "day_index": 1,
+          "date": "2026-05-25",
+          "features": {
+            "source": "synthetic",
+            "lead": "II",
+            "fs": 360,
+            "duration_s": 30.0,
+            "n_beats": 35,
+            "mean_hr_bpm": 71.5,
+            "min_hr_bpm": 61.0,
+            "max_hr_bpm": 84.7,
+            "sdnn_ms": 71.0,
+            "rmssd_ms": 83.9,
+            "pnn50_pct": 66.7,
+            "flags": [
+              "normal_rate"
+            ]
+          }
+        },
+        {
+          "day_index": 2,
+          "date": "2026-05-26",
+          "features": {
+            "source": "synthetic",
+            "lead": "II",
+            "fs": 360,
+            "duration_s": 30.0,
+            "n_beats": 32,
+            "mean_hr_bpm": 66.9,
+            "min_hr_bpm": 61.9,
+            "max_hr_bpm": 79.4,
+            "sdnn_ms": 54.5,
+            "rmssd_ms": 65.3,
+            "pnn50_pct": 40.0,
+            "flags": [
+              "normal_rate"
+            ]
+          }
+        },
+        {
+          "day_index": 3,
+          "date": "2026-05-27",
+          "features": {
+            "source": "synthetic",
+            "lead": "II",
+            "fs": 360,
+            "duration_s": 30.0,
+            "n_beats": 34,
+            "mean_hr_bpm": 71.1,
+            "min_hr_bpm": 56.2,
+            "max_hr_bpm": 84.7,
+            "sdnn_ms": 70.1,
+            "rmssd_ms": 104.7,
+            "pnn50_pct": 65.6,
+            "flags": [
+              "normal_rate"
+            ]
+          }
+        },
+        {
+          "day_index": 4,
+          "date": "2026-05-28",
+          "features": {
+            "source": "synthetic",
+            "lead": "II",
+            "fs": 360,
+            "duration_s": 30.0,
+            "n_beats": 33,
+            "mean_hr_bpm": 68.0,
+            "min_hr_bpm": 60.8,
+            "max_hr_bpm": 83.4,
+            "sdnn_ms": 57.1,
+            "rmssd_ms": 85.5,
+            "pnn50_pct": 61.3,
+            "flags": [
+              "normal_rate"
+            ]
+          }
+        },
+        {
+          "day_index": 5,
+          "date": "2026-05-29",
+          "features": {
+            "source": "synthetic",
+            "lead": "II",
+            "fs": 360,
+            "duration_s": 30.0,
+            "n_beats": 35,
+            "mean_hr_bpm": 72.0,
+            "min_hr_bpm": 59.2,
+            "max_hr_bpm": 79.7,
+            "sdnn_ms": 58.4,
+            "rmssd_ms": 89.0,
+            "pnn50_pct": 66.7,
+            "flags": [
+              "normal_rate"
+            ]
+          }
+        },
+        {
+          "day_index": 6,
+          "date": "2026-05-30",
+          "features": {
+            "source": "synthetic",
+            "lead": "II",
+            "fs": 360,
+            "duration_s": 30.0,
+            "n_beats": 33,
+            "mean_hr_bpm": 67.4,
+            "min_hr_bpm": 59.8,
+            "max_hr_bpm": 76.9,
+            "sdnn_ms": 50.0,
+            "rmssd_ms": 56.0,
+            "pnn50_pct": 22.6,
+            "flags": [
+              "normal_rate"
+            ]
+          }
+        }
+      ],
+      "weekly_summary": "Over the 7-day monitoring period, Ava Reyes' mean heart rate showed a slight fluctuation but no consistent upward or downward trend. The heart rate ranged from 66.9 bpm on 2026-05-26 to 72.0 bpm on 2026-05-29, with most days falling within a relatively narrow range. This stability in heart rate suggests that Ava's cardiovascular system is adapting well to daily stresses and activities.\n\nThe heart rate variability (HRV) metrics, including SDNN and RMSSD, provide insight into Ava's autonomic nervous system function. Across the week, SDNN ranged from 50.0 ms to 71.0 ms, and RMSSD from 56.0 ms to 104.7 ms. Notably, both SDNN and RMSSD were highest on 2026-05-27, indicating a potential peak in parasympathetic activity on this day. Overall, the HRV metrics suggest a healthy autonomic balance, with no clear deterioration in HRV over the monitoring period. However, the decrease in SDNN and RMSSD on 2026-05-30 compared to previous days may warrant further review.\n\nThe day that stands out in the data is 2026-05-27, with significantly higher RMSSD and SDNN values, suggesting enhanced parasympathetic activity. Additionally, the decrease in HRV metrics on 2026-05-30 may be worth reviewing to determine if this represents a transient change or a more persistent shift. It is recommended to continue monitoring Ava's ECG features to assess whether this trend continues or reverses. \nThis summary is for informational purposes only and should not be used to make diagnostic decisions.",
+      "summary_model": "groq/llama-3.3-70b-versatile",
+      "summary_is_mock": false
+    },
+    {
+      "user_id": "P002",
+      "name": "Ben Okafor",
+      "profile": "developing tachycardia (rising HR, falling HRV)",
+      "daily": [
+        {
+          "day_index": 0,
+          "date": "2026-05-24",
+          "features": {
+            "source": "synthetic",
+            "lead": "II",
+            "fs": 360,
+            "duration_s": 30.0,
+            "n_beats": 38,
+            "mean_hr_bpm": 77.4,
+            "min_hr_bpm": 70.1,
+            "max_hr_bpm": 86.4,
+            "sdnn_ms": 46.1,
+            "rmssd_ms": 63.6,
+            "pnn50_pct": 47.2,
+            "flags": [
+              "normal_rate"
+            ]
+          }
+        },
+        {
+          "day_index": 1,
+          "date": "2026-05-25",
+          "features": {
+            "source": "synthetic",
+            "lead": "II",
+            "fs": 360,
+            "duration_s": 30.0,
+            "n_beats": 41,
+            "mean_hr_bpm": 83.4,
+            "min_hr_bpm": 76.3,
+            "max_hr_bpm": 94.3,
+            "sdnn_ms": 31.2,
+            "rmssd_ms": 42.5,
+            "pnn50_pct": 23.1,
+            "flags": [
+              "normal_rate"
+            ]
+          }
+        },
+        {
+          "day_index": 2,
+          "date": "2026-05-26",
+          "features": {
+            "source": "synthetic",
+            "lead": "II",
+            "fs": 360,
+            "duration_s": 30.0,
+            "n_beats": 43,
+            "mean_hr_bpm": 89.1,
+            "min_hr_bpm": 79.4,
+            "max_hr_bpm": 106.4,
+            "sdnn_ms": 33.6,
+            "rmssd_ms": 45.3,
+            "pnn50_pct": 17.1,
+            "flags": [
+              "normal_rate"
+            ]
+          }
+        },
+        {
+          "day_index": 3,
+          "date": "2026-05-27",
+          "features": {
+            "source": "synthetic",
+            "lead": "II",
+            "fs": 360,
+            "duration_s": 30.0,
+            "n_beats": 46,
+            "mean_hr_bpm": 94.7,
+            "min_hr_bpm": 88.9,
+            "max_hr_bpm": 102.4,
+            "sdnn_ms": 22.1,
+            "rmssd_ms": 33.1,
+            "pnn50_pct": 13.6,
+            "flags": [
+              "normal_rate"
+            ]
+          }
+        },
+        {
+          "day_index": 4,
+          "date": "2026-05-28",
+          "features": {
+            "source": "synthetic",
+            "lead": "II",
+            "fs": 360,
+            "duration_s": 30.0,
+            "n_beats": 49,
+            "mean_hr_bpm": 100.7,
+            "min_hr_bpm": 94.7,
+            "max_hr_bpm": 109.1,
+            "sdnn_ms": 16.0,
+            "rmssd_ms": 24.4,
+            "pnn50_pct": 4.3,
+            "flags": [
+              "tachycardia",
+              "low_hrv"
+            ]
+          }
+        },
+        {
+          "day_index": 5,
+          "date": "2026-05-29",
+          "features": {
+            "source": "synthetic",
+            "lead": "II",
+            "fs": 360,
+            "duration_s": 30.0,
+            "n_beats": 52,
+            "mean_hr_bpm": 106.7,
+            "min_hr_bpm": 101.4,
+            "max_hr_bpm": 114.3,
+            "sdnn_ms": 13.6,
+            "rmssd_ms": 20.0,
+            "pnn50_pct": 2.0,
+            "flags": [
+              "tachycardia",
+              "low_hrv"
+            ]
+          }
+        },
+        {
+          "day_index": 6,
+          "date": "2026-05-30",
+          "features": {
+            "source": "synthetic",
+            "lead": "II",
+            "fs": 360,
+            "duration_s": 30.0,
+            "n_beats": 55,
+            "mean_hr_bpm": 112.1,
+            "min_hr_bpm": 106.9,
+            "max_hr_bpm": 115.5,
+            "sdnn_ms": 9.0,
+            "rmssd_ms": 13.8,
+            "pnn50_pct": 0.0,
+            "flags": [
+              "tachycardia",
+              "low_hrv"
+            ]
+          }
+        }
+      ],
+      "weekly_summary": "Over the 7-day monitoring period, Ben Okafor's mean heart rate (HR) has shown a consistent and significant upward trend. Starting at 77.4 bpm on May 24, the heart rate increased by approximately 35 bpm over the course of the week, reaching 112.1 bpm by May 30. This rise in heart rate is notable, with the last three days (May 28-30) being flagged for tachycardia, indicating a heart rate that is higher than normal.\n\nIn conjunction with the rising heart rate, Ben's heart rate variability (HRV) has demonstrated a downward trend. The standard deviation of normal-to-normal intervals (SDNN) decreased from 46.1 ms on May 24 to 9.0 ms on May 30, while the root mean square of successive differences (RMSSD) decreased from 63.6 ms to 13.8 ms over the same period. This decline in HRV suggests a potential deterioration in autonomic function, with a shift towards sympathetic dominance. The decrease in HRV is concerning, as it may indicate a reduced ability to respond to stress and potential cardiovascular risk.\n\nThe days that stand out in the monitoring period are May 28-30, where Ben's heart rate exceeded normal limits and his HRV was significantly reduced, warranting a review of his condition and potential adjustment of treatment. It is essential to examine these changes in the context of Ben's overall health and medical history to determine the best course of action. \nThis summary is for informational purposes only and should not be used to make diagnostic decisions.",
+      "summary_model": "groq/llama-3.3-70b-versatile",
+      "summary_is_mock": false
+    },
+    {
+      "user_id": "P003",
+      "name": "Carla Nguyen",
+      "profile": "endurance athlete, resting bradycardia",
+      "daily": [
+        {
+          "day_index": 0,
+          "date": "2026-05-24",
+          "features": {
+            "source": "synthetic",
+            "lead": "II",
+            "fs": 360,
+            "duration_s": 30.0,
+            "n_beats": 23,
+            "mean_hr_bpm": 49.0,
+            "min_hr_bpm": 35.5,
+            "max_hr_bpm": 63.9,
+            "sdnn_ms": 232.6,
+            "rmssd_ms": 273.1,
+            "pnn50_pct": 85.7,
+            "flags": [
+              "bradycardia",
+              "high_hrv"
+            ]
+          }
+        },
+        {
+          "day_index": 1,
+          "date": "2026-05-25",
+          "features": {
+            "source": "synthetic",
+            "lead": "II",
+            "fs": 360,
+            "duration_s": 30.0,
+            "n_beats": 27,
+            "mean_hr_bpm": 57.7,
+            "min_hr_bpm": 42.1,
+            "max_hr_bpm": 93.5,
+            "sdnn_ms": 205.0,
+            "rmssd_ms": 266.5,
+            "pnn50_pct": 84.0,
+            "flags": [
+              "bradycardia",
+              "high_hrv"
+            ]
+          }
+        },
+        {
+          "day_index": 2,
+          "date": "2026-05-26",
+          "features": {
+            "source": "synthetic",
+            "lead": "II",
+            "fs": 360,
+            "duration_s": 30.0,
+            "n_beats": 24,
+            "mean_hr_bpm": 52.1,
+            "min_hr_bpm": 35.8,
+            "max_hr_bpm": 70.1,
+            "sdnn_ms": 197.6,
+            "rmssd_ms": 294.1,
+            "pnn50_pct": 86.4,
+            "flags": [
+              "bradycardia",
+              "high_hrv"
+            ]
+          }
+        },
+        {
+          "day_index": 3,
+          "date": "2026-05-27",
+          "features": {
+            "source": "synthetic",
+            "lead": "II",
+            "fs": 360,
+            "duration_s": 30.0,
+            "n_beats": 26,
+            "mean_hr_bpm": 56.0,
+            "min_hr_bpm": 34.7,
+            "max_hr_bpm": 81.5,
+            "sdnn_ms": 241.0,
+            "rmssd_ms": 302.5,
+            "pnn50_pct": 91.7,
+            "flags": [
+              "bradycardia",
+              "high_hrv"
+            ]
+          }
+        },
+        {
+          "day_index": 4,
+          "date": "2026-05-28",
+          "features": {
+            "source": "synthetic",
+            "lead": "II",
+            "fs": 360,
+            "duration_s": 30.0,
+            "n_beats": 24,
+            "mean_hr_bpm": 50.5,
+            "min_hr_bpm": 38.4,
+            "max_hr_bpm": 67.5,
+            "sdnn_ms": 192.7,
+            "rmssd_ms": 273.7,
+            "pnn50_pct": 81.8,
+            "flags": [
+              "bradycardia",
+              "high_hrv"
+            ]
+          }
+        },
+        {
+          "day_index": 5,
+          "date": "2026-05-29",
+          "features": {
+            "source": "synthetic",
+            "lead": "II",
+            "fs": 360,
+            "duration_s": 30.0,
+            "n_beats": 24,
+            "mean_hr_bpm": 50.4,
+            "min_hr_bpm": 37.6,
+            "max_hr_bpm": 72.2,
+            "sdnn_ms": 211.6,
+            "rmssd_ms": 281.2,
+            "pnn50_pct": 72.7,
+            "flags": [
+              "bradycardia",
+              "high_hrv"
+            ]
+          }
+        },
+        {
+          "day_index": 6,
+          "date": "2026-05-30",
+          "features": {
+            "source": "synthetic",
+            "lead": "II",
+            "fs": 360,
+            "duration_s": 30.0,
+            "n_beats": 23,
+            "mean_hr_bpm": 50.1,
+            "min_hr_bpm": 32.6,
+            "max_hr_bpm": 71.1,
+            "sdnn_ms": 213.1,
+            "rmssd_ms": 335.7,
+            "pnn50_pct": 85.7,
+            "flags": [
+              "bradycardia",
+              "high_hrv"
+            ]
+          }
+        }
+      ],
+      "weekly_summary": "Over the 7-day monitoring period, Carla Nguyen's mean heart rate has shown a generally stable trend, with some fluctuations. The heart rate started at 49.0 bpm on May 24, increased to 57.7 bpm on May 25, and then remained relatively stable, ranging between 50.1 and 56.0 bpm for the remainder of the week. Notably, the highest heart rate was recorded on May 25, while the lowest heart rates were observed towards the end of the week.\n\nIn terms of heart rate variability (HRV), Carla's SDNN and RMSSD values have remained high throughout the week, indicating a strong parasympathetic tone. The SDNN values have fluctuated between 192.7 and 241.0 ms, while RMSSD values have ranged from 266.5 to 335.7 ms. The overall trend suggests that Carla's autonomic state is characterized by a dominant parasympathetic activity, which is consistent with her endurance athlete profile. The high HRV values are generally indicative of good cardiovascular fitness and adaptability to stress.\n\nThere are no standout days that raise immediate concerns, but it is worth reviewing the data from May 25, which showed the highest heart rate and a relatively lower RMSSD value compared to the other days. This could be an interesting data point to explore further. \nThis summary is for informational purposes only and should not be used to make any diagnostic decisions.",
+      "summary_model": "groq/llama-3.3-70b-versatile",
+      "summary_is_mock": false
+    },
+    {
+      "user_id": "P004",
+      "name": "Dmitri Sokolov",
+      "profile": "recovering patient (HR normalizing, HRV improving)",
+      "daily": [
+        {
+          "day_index": 0,
+          "date": "2026-05-24",
+          "features": {
+            "source": "synthetic",
+            "lead": "II",
+            "fs": 360,
+            "duration_s": 30.0,
+            "n_beats": 51,
+            "mean_hr_bpm": 104.2,
+            "min_hr_bpm": 98.2,
+            "max_hr_bpm": 109.1,
+            "sdnn_ms": 14.1,
+            "rmssd_ms": 21.5,
+            "pnn50_pct": 2.0,
+            "flags": [
+              "tachycardia",
+              "low_hrv"
+            ]
+          }
+        },
+        {
+          "day_index": 1,
+          "date": "2026-05-25",
+          "features": {
+            "source": "synthetic",
+            "lead": "II",
+            "fs": 360,
+            "duration_s": 30.0,
+            "n_beats": 49,
+            "mean_hr_bpm": 100.0,
+            "min_hr_bpm": 94.3,
+            "max_hr_bpm": 109.6,
+            "sdnn_ms": 18.7,
+            "rmssd_ms": 24.5,
+            "pnn50_pct": 4.3,
+            "flags": [
+              "tachycardia",
+              "low_hrv"
+            ]
+          }
+        },
+        {
+          "day_index": 2,
+          "date": "2026-05-26",
+          "features": {
+            "source": "synthetic",
+            "lead": "II",
+            "fs": 360,
+            "duration_s": 30.0,
+            "n_beats": 46,
+            "mean_hr_bpm": 93.5,
+            "min_hr_bpm": 86.4,
+            "max_hr_bpm": 99.5,
+            "sdnn_ms": 24.8,
+            "rmssd_ms": 38.0,
+            "pnn50_pct": 22.7,
+            "flags": [
+              "normal_rate"
+            ]
+          }
+        },
+        {
+          "day_index": 3,
+          "date": "2026-05-27",
+          "features": {
+            "source": "synthetic",
+            "lead": "II",
+            "fs": 360,
+            "duration_s": 30.0,
+            "n_beats": 43,
+            "mean_hr_bpm": 89.0,
+            "min_hr_bpm": 76.1,
+            "max_hr_bpm": 97.7,
+            "sdnn_ms": 39.8,
+            "rmssd_ms": 50.2,
+            "pnn50_pct": 34.1,
+            "flags": [
+              "normal_rate"
+            ]
+          }
+        },
+        {
+          "day_index": 4,
+          "date": "2026-05-28",
+          "features": {
+            "source": "synthetic",
+            "lead": "II",
+            "fs": 360,
+            "duration_s": 30.0,
+            "n_beats": 41,
+            "mean_hr_bpm": 84.7,
+            "min_hr_bpm": 73.5,
+            "max_hr_bpm": 98.2,
+            "sdnn_ms": 42.9,
+            "rmssd_ms": 57.6,
+            "pnn50_pct": 38.5,
+            "flags": [
+              "normal_rate"
+            ]
+          }
+        },
+        {
+          "day_index": 5,
+          "date": "2026-05-29",
+          "features": {
+            "source": "synthetic",
+            "lead": "II",
+            "fs": 360,
+            "duration_s": 30.0,
+            "n_beats": 38,
+            "mean_hr_bpm": 79.0,
+            "min_hr_bpm": 66.9,
+            "max_hr_bpm": 93.1,
+            "sdnn_ms": 60.0,
+            "rmssd_ms": 80.0,
+            "pnn50_pct": 55.6,
+            "flags": [
+              "normal_rate"
+            ]
+          }
+        },
+        {
+          "day_index": 6,
+          "date": "2026-05-30",
+          "features": {
+            "source": "synthetic",
+            "lead": "II",
+            "fs": 360,
+            "duration_s": 30.0,
+            "n_beats": 36,
+            "mean_hr_bpm": 73.7,
+            "min_hr_bpm": 63.0,
+            "max_hr_bpm": 89.3,
+            "sdnn_ms": 66.6,
+            "rmssd_ms": 107.0,
+            "pnn50_pct": 79.4,
+            "flags": [
+              "normal_rate"
+            ]
+          }
+        }
+      ],
+      "weekly_summary": "Over the 7-day monitoring period, Dmitri Sokolov's mean heart rate (HR) has shown a consistent downward trend. Starting at 104.2 bpm on May 24, the heart rate decreased steadily, reaching 73.7 bpm by May 30. This decrease of approximately 30 bpm over the course of the week suggests that the patient's heart rate is normalizing.\n\nThe trend in heart rate variability (HRV), as indicated by SDNN and RMSSD, also shows significant improvement over the week. Both SDNN and RMSSD have increased substantially, with SDNN rising from 14.1 ms to 66.6 ms and RMSSD increasing from 21.5 ms to 107.0 ms. This improvement in HRV suggests an enhancement in the autonomic nervous system's ability to regulate heart rate, which is a positive indicator of recovery. The increase in HRV metrics indicates a shift towards a more balanced autonomic state, with a greater parasympathetic influence.\n\nThe most notable aspect of the trend is the steady and consistent improvement in both heart rate and HRV across the week, with no significant reversals or anomalies. However, the transition from May 27 to May 28 and then to May 29, where SDNN and RMSSD show significant jumps, could be worth reviewing in more detail to understand the factors contributing to this rapid improvement. \nThis summary is for informational purposes only and should not be used to make diagnostic decisions.",
+      "summary_model": "groq/llama-3.3-70b-versatile",
+      "summary_is_mock": false
+    },
+    {
+      "user_id": "P005",
+      "name": "Elena Costa",
+      "profile": "rising autonomic stress (stable HR, declining HRV)",
+      "daily": [
+        {
+          "day_index": 0,
+          "date": "2026-05-24",
+          "features": {
+            "source": "synthetic",
+            "lead": "II",
+            "fs": 360,
+            "duration_s": 30.0,
+            "n_beats": 39,
+            "mean_hr_bpm": 80.3,
+            "min_hr_bpm": 64.9,
+            "max_hr_bpm": 100.0,
+            "sdnn_ms": 79.5,
+            "rmssd_ms": 128.8,
+            "pnn50_pct": 81.1,
+            "flags": [
+              "normal_rate"
+            ]
+          }
+        },
+        {
+          "day_index": 1,
+          "date": "2026-05-25",
+          "features": {
+            "source": "synthetic",
+            "lead": "II",
+            "fs": 360,
+            "duration_s": 30.0,
+            "n_beats": 40,
+            "mean_hr_bpm": 81.7,
+            "min_hr_bpm": 70.4,
+            "max_hr_bpm": 98.2,
+            "sdnn_ms": 60.2,
+            "rmssd_ms": 81.2,
+            "pnn50_pct": 60.5,
+            "flags": [
+              "normal_rate"
+            ]
+          }
+        },
+        {
+          "day_index": 2,
+          "date": "2026-05-26",
+          "features": {
+            "source": "synthetic",
+            "lead": "II",
+            "fs": 360,
+            "duration_s": 30.0,
+            "n_beats": 38,
+            "mean_hr_bpm": 78.8,
+            "min_hr_bpm": 69.5,
+            "max_hr_bpm": 98.2,
+            "sdnn_ms": 54.7,
+            "rmssd_ms": 81.8,
+            "pnn50_pct": 50.0,
+            "flags": [
+              "normal_rate"
+            ]
+          }
+        },
+        {
+          "day_index": 3,
+          "date": "2026-05-27",
+          "features": {
+            "source": "synthetic",
+            "lead": "II",
+            "fs": 360,
+            "duration_s": 30.0,
+            "n_beats": 39,
+            "mean_hr_bpm": 80.9,
+            "min_hr_bpm": 72.0,
+            "max_hr_bpm": 96.0,
+            "sdnn_ms": 44.8,
+            "rmssd_ms": 65.8,
+            "pnn50_pct": 45.9,
+            "flags": [
+              "normal_rate"
+            ]
+          }
+        },
+        {
+          "day_index": 4,
+          "date": "2026-05-28",
+          "features": {
+            "source": "synthetic",
+            "lead": "II",
+            "fs": 360,
+            "duration_s": 30.0,
+            "n_beats": 38,
+            "mean_hr_bpm": 78.2,
+            "min_hr_bpm": 71.5,
+            "max_hr_bpm": 85.4,
+            "sdnn_ms": 33.0,
+            "rmssd_ms": 43.4,
+            "pnn50_pct": 25.0,
+            "flags": [
+              "normal_rate"
+            ]
+          }
+        },
+        {
+          "day_index": 5,
+          "date": "2026-05-29",
+          "features": {
+            "source": "synthetic",
+            "lead": "II",
+            "fs": 360,
+            "duration_s": 30.0,
+            "n_beats": 40,
+            "mean_hr_bpm": 81.3,
+            "min_hr_bpm": 74.0,
+            "max_hr_bpm": 89.3,
+            "sdnn_ms": 28.1,
+            "rmssd_ms": 44.0,
+            "pnn50_pct": 23.7,
+            "flags": [
+              "normal_rate"
+            ]
+          }
+        },
+        {
+          "day_index": 6,
+          "date": "2026-05-30",
+          "features": {
+            "source": "synthetic",
+            "lead": "II",
+            "fs": 360,
+            "duration_s": 30.0,
+            "n_beats": 38,
+            "mean_hr_bpm": 78.7,
+            "min_hr_bpm": 73.7,
+            "max_hr_bpm": 84.4,
+            "sdnn_ms": 24.7,
+            "rmssd_ms": 33.8,
+            "pnn50_pct": 16.7,
+            "flags": [
+              "normal_rate"
+            ]
+          }
+        }
+      ],
+      "weekly_summary": "Over the 7-day monitoring period, Elena Costa's mean heart rate has remained relatively stable, fluctuating between 78.2 and 81.7 bpm. There is no clear upward or downward trend in heart rate, with values on the first and last days of monitoring (80.3 bpm on 2026-05-24 and 78.7 bpm on 2026-05-30) being fairly close. This stability suggests that her heart rate has not been significantly impacted over the course of the week.\n\nIn contrast to the stable heart rate, Elena's heart rate variability (HRV) has shown a notable decline. The standard deviation of normal-to-normal intervals (SDNN) decreased from 79.5 ms on 2026-05-24 to 24.7 ms on 2026-05-30, while the root mean square of successive differences (RMSSD) decreased from 128.8 ms to 33.8 ms over the same period. This decline in HRV suggests a deterioration in autonomic function, potentially indicating increased autonomic stress. The consistent decrease in both SDNN and RMSSD across the week supports this interpretation.\n\nThe decline in HRV is consistent across the week, with each day generally showing lower values than the previous one. While all days are flagged as \"normal_rate\", the progressive decline in HRV may warrant a closer review of the patient's condition and potential factors contributing to increased autonomic stress. \nThis summary is for informational purposes only and should not be used to make diagnostic decisions.",
+      "summary_model": "groq/llama-3.3-70b-versatile",
+      "summary_is_mock": false
+    }
+  ]
+}
